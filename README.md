@@ -5,7 +5,10 @@
 
 # FinBank SOC
 
-## Architecture
-- Ubuntu: Splunk
-- Metasploitable2: Target
-- Kali: Attack
+## Architecture & Asset Roles
+- **FINBANK-SIEM (Ubuntu):** Log Aggregator & Analysis (Splunk Enterprise).
+- **FINBANK-SRV (Metasploitable2):** Target Asset / Internal Web Server.
+- **FINBANK-ATTACK (Kali Linux):** Security Testing & Attack Simulation.
+
+## Network Configuration
+- **Subnet:** Isolated Lab Network (Host-Only)
