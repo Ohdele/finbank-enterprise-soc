@@ -1,0 +1,100 @@
+  139  2025-12-21 05:42:48 git add .
+  140  2025-12-21 05:42:48 git commit -m "Initial commit: project structure and README"
+  142  2025-12-21 05:42:48 git add reports/company_profile.txt && git commit -m "Add base company profile"
+  144  2025-12-21 05:42:48 git add scans/*.txt && git commit -m "Add placeholder scan files"
+  145  2025-12-21 05:42:48 git branch -M main
+  146  2025-12-21 05:42:48 git remote add origin https://github.com/Ohdele/securebank-pt.git
+  147  2025-12-21 05:42:48 git push -u origin main
+  183  2025-12-04 18:25:45 nmap -sV -Pn 192.168.56.103
+  196  2025-12-04 19:06:23 git clone https://github.com/Ohdele/securebank-penetration-test.git
+  197  2025-12-04 19:06:46 ping -c 4 github.com
+  199  2025-12-04 19:08:03 ping -c 4 github.com
+  201  2025-12-04 19:08:38 ping -c 4 github.com
+  210  2025-12-07 07:28:59 nmap -sn 192.168.56.0/24
+  213  2025-12-07 07:32:10 nmap -sV 192.168.56.103
+  238  2025-12-07 14:55:37 cat outputs/nmap_scan_full.txt
+  281  2025-12-08 09:19:03 git init
+  282  2025-12-08 09:19:11 git add .
+  283  2025-12-08 09:19:34 git commit -m "Step 5: Documented Command Injection and SQL Injection."
+  285  2025-12-08 09:24:30 git reset HEAD^
+  286  2025-12-08 09:25:07 git add README.md outputs/log_05_exploitation.txt
+  287  2025-12-08 09:25:13 git commit -m "Step 5: Documented Command Injection and SQL Injection (Cleaned)."
+  288  2025-12-08 09:25:35 git push -u origin main
+  289  2025-12-08 09:27:37 git checkout HEAD^ -- README.md
+  295  2025-12-08 09:59:13 git add README.md
+  296  2025-12-08 09:59:51 git commit --amend -m "Documentation: README update and file for Steps 1-5."
+  297  2025-12-08 10:00:14 git push -f origin main
+  304  2025-12-07 18:11:43 cat outputs/nmap_scan_full.txt >> outputs/proof_log.txt
+  306  2025-12-07 18:12:45 rm outputs/nmap_scan_full.txt
+  308  2025-12-07 18:18:04 git add outputs/proof_log.txt
+  309  2025-12-07 18:18:20 git commit --amend --no-edit
+  310  2025-12-07 18:18:26 git push --force
+  311  2025-12-07 18:19:29 git rm outputs/nmap_scan_full.txt
+  312  2025-12-07 18:19:43 git commit --amend --no-edit
+  313  2025-12-07 18:19:51 git push --force
+  328  2025-12-08 11:39:32 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
+  338  2025-12-11 16:04:08 git init
+  339  2025-12-11 16:05:26 git remote add origin https://github.com/Ohdele/wave-fintech-security.git
+  340  2025-12-11 16:05:59 git branch -M main
+  342  2025-12-11 16:07:27 git add .
+  343  2025-12-11 16:07:47 git commit -m "Initial commit: Project setup and documentation structure"
+  344  2025-12-11 16:08:02 git push -u origin main
+  346  2025-12-11 16:14:33 git add README.md
+  347  2025-12-11 16:14:50 git commit -m "Update README.md with objective and output link"
+  348  2025-12-11 16:15:04 git push origin main
+  350  2025-12-11 16:19:06 git add README.md
+  351  2025-12-11 16:19:30 git commit -m "Fix: Markdown link syntax for output file"
+  352  2025-12-11 16:19:57 git push
+  371  2025-12-15 01:50:23 git init
+  372  2025-12-15 01:50:36 git add .
+  373  2025-12-15 01:50:55 git commit -m "Initial commit: Project structure and documentation files."
+  374  2025-12-15 01:51:04 git branch -M main
+  375  2025-12-15 01:51:11 git remote add origin https://github.com/Ohdele/finbank-enterprise-soc.git
+  376  2025-12-15 01:51:21 git push -u origin main
+  379  2025-12-19 00:16:20 curl -I http://192.168.56.108 && git init && touch README.md && echo "[View Output in session_logs.txt]" >> README.md
+  380  2025-12-19 00:18:55 exit && git add README.md session_logs.txt && git commit -m "feat: initial SOC connection log and automated README"
+  382  2025-12-19 00:19:44 git branch -M main && git remote add origin https://github.com/YOUR_USERNAME/FinBank-Enterprise-SOC.git && git push -u origin main
+  383  2025-12-19 00:20:07 git remote remove origin && git remote add origin https://github.com/YOUR_USERNAME/FinBank-Enterprise-SOC.git && git push -u origin main
+  384  2025-12-19 00:21:57 git remote add origin https://github.com/Ohdele/finbank-enterprise-soc.git && git push -u origin main
+  385  2025-12-19 00:22:17 git remote set-url origin https://github.com/Ohdele/finbank-enterprise-soc.git && git push -u origin main
+  386  2025-12-19 00:23:03 git add session_logs.txt README.md && git commit -m "feat: include verified SOC connection logs" && git push origin main
+  387  2025-12-19 00:26:45 nano session_logs.txt && echo "[View Output in session_logs.txt]" >> README.md && git add . && git commit -m "docs: manual log cleanup and readme update" && git push
+  391  2025-12-17 16:34:46 script -a splunk_output.txt -c "env HYDRA_SSH_OPTIONS='-oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1' hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt ssh://192.168.56.105 -t 4 -V"
+  392  2025-12-17 16:35:39 msfconsole -q -x "use auxiliary/scanner/ssh/ssh_login; set RHOSTS 192.168.56.105; set USERNAME root; set PASS_FILE /usr/share/wordlists/metasploit/unix_passwords.txt; set THREADS 5; run; exit" | tee -a splunk_output.txt
+  396  2025-12-17 17:59:31 cd ~/FinBank-Enterprise-SOC && script -a -c "ssh dele@192.168.56.107 'sudo /opt/splunk/bin/splunk search \"sourcetype=syslog\" -auth admin:newpassword123'" verify_ingestion.txt && echo "- Verified remote logs from Kali [View Output in verify_ingestion.txt]" >> README.md
+  398  2025-12-17 19:28:39 cd ~/FinBank-Enterprise-SOC && script -a -c "ssh dele@192.168.56.107 'sudo /opt/splunk/bin/splunk search \"sourcetype=syslog\" -auth admin:newpassword123'" verify_ingestion.txt && echo "- Verified remote logs from Kali [View Output in verify_ingestion.txt]" >> README.md
+  400  2025-12-17 19:29:15 cd ~/FinBank-Enterprise-SOC && script -a -c "ssh dele@192.168.56.107 'sudo /opt/splunk/bin/splunk search \"sourcetype=syslog\" -auth admin:newpassword123'" verify_ingestion.txt && echo "- Verified remote logs from Kali [View Output in verify_ingestion.txt]" >> README.md
+  401  2025-12-17 23:04:10 cd ~/FinBank-Enterprise-SOC && script -a -c "ssh dele@192.168.56.108 'sudo /opt/splunk/bin/splunk search \"sourcetype=syslog\" -auth admin:newpassword123'" verify_ingestion.txt && echo "- Verified remote logs from Kali [View Output in verify_ingestion.txt]" >> README.md
+  402  2025-12-17 23:06:18 cd ~/FinBank-Enterprise-SOC && script -a -c "ssh -t dele@192.168.56.108 'sudo /opt/splunk/bin/splunk search \"sourcetype=syslog\" -auth admin:newpassword123'" verify_ingestion.txt && echo "- Verified remote logs from Kali [View Output in verify_ingestion.txt]" >> README.md
+  404  2025-12-17 23:08:08 git init && echo "# FinBank Enterprise SOC" > README.md && git add README.md verify_ingestion.txt && git commit -m "Initial commit: Remote Log Verification"
+  418  2025-12-17 23:09:53 git add README.md && git commit -m "Update README with enterprise architecture"
+  419  2025-12-17 23:10:17 git remote add origin https://github.com/$(whoami)/FinBank-Enterprise-SOC.git && git push -u origin main
+  420  2025-12-17 23:10:37 git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/FinBank-Enterprise-SOC.git && git push -u origin main
+  421  2025-12-17 23:11:29 git remote set-url origin https://github.com/Ohdele/finbank-enterprise-soc.git && git push -u origin main
+  422  2025-12-17 23:11:52 git push -u origin main --force
+  443  2025-12-17 23:16:35 git add README.md && git commit -m "Detail VM applications and roles" && git push -u origin main --force
+  460  2025-12-19 02:39:32 Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-12-19 02:39:32
+  462  2025-12-19 02:40:06 Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-12-19 02:40:06
+  466  2025-12-21 05:50:27 nmap -p 6200 192.168.56.105
+  474  2025-12-21 06:26:46 git init && git add . && git commit -m "Initial commit: vsFTPd backdoor exploit documentation"
+  475  2025-12-21 06:27:42 git branch -m main
+  476  2025-12-21 06:28:21 git remote add origin https://github.com/Ohdele/finbank-enterprise-soc.git
+  477  2025-12-21 06:28:39 git push -u origin main --force
+  478  2025-12-21 06:31:12 git pull origin main --allow-unrelated-histories
+  479  2025-12-21 06:31:35 mv README.md session_log.txt .. && cd .. && rm -rf vsftpd-backdoor-project && git reflog
+  480  2025-12-21 06:31:57 git reset --hard 4934dca && git push -f origin main
+  481  2025-12-21 06:33:45 git reset --hard 53e169e && ls -R
+  482  2025-12-21 06:34:03 git reflog
+  483  2025-12-21 06:34:29 git reset --hard c2b8478 && ls -R
+  484  2025-12-21 06:34:49 git fsck --lost-found
+  485  2025-12-21 06:35:10 git ls-tree -r 93623e5
+  486  2025-12-21 06:35:31 find .git/objects -type f | xargs -n 1 git cat-file -p | grep "FinBank"
+  487  2025-12-21 06:35:59 ls .git/objects/??/* | sed 's#\.git/objects/##;s#/##' | xargs -n 1 git cat-file -p | grep -C 5 "FinBank"
+  488  2025-12-21 06:36:34 git cat-file -p 2997469 > README.md && cat session_log.txt >> README.md && git add . && git commit -m "Enterprise Restore: Reintegrated Stages 1-5 and Exploitation Logs"
+  489  2025-12-21 06:36:51 git push -u origin main --force
+  490  2025-12-21 06:38:00 git ls-tree -r 4934dca
+  491  2025-12-21 06:38:23 git cat-file -p 57bfb3bee2b82c0d24ffc08df5cd67a4c853eec6
+  492  2025-12-21 06:40:29 find .git/objects -type f | sed 's#\.git/objects/##;s#/##' | xargs -I {} sh -c 'size=$(git cat-file -s {}); if [ "$size" -gt 0 ]; then echo "Hash: {} Size: $size"; git cat-file -p {} | head -n 3; fi'
+  493  2025-12-21 06:41:01 git cat-file -p 21116dde4ac9567fae5e2988e0629a2ea662dc00 > recovered_session.log
+  494  2025-12-21 06:41:33 git cat-file -p 57bfb3bee2b82c0d24ffc08df5cd67a4c853eec6 > README.md && cat recovered_session.log >> README.md
+  495  2025-12-21 06:41:59 history | grep -E "msfconsole|nmap|splunk|git" | tail -n 100 > recovered_commands.txt
